@@ -10,7 +10,7 @@ let cors = require("cors");
 const app = express();
 env.config();
 
-// Configuração do rest (Cors é politicas de segurança)
+// Configuração do rest (Cors é politicas de segurança (Caso haja erro, bote a URL do local onde estará sendo usado a API))
 //Origin me diz que todo link pode utilizar este REST
 //Methods: Métodos que serão usados (Porém utilizamos apenas o GET)
 //AllowedHeaders: Campos que nos permitem configurar da nossa forma (content type: json, xml, html, word. Authorization: Serviço para senhas)
